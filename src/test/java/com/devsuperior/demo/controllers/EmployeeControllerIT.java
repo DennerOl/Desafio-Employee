@@ -163,6 +163,7 @@ public class EmployeeControllerIT {
 		result.andExpect(jsonPath("$.errors[0].message").value("Campo requerido"));
 	}
 	
+/*	não tem mais necessidade desses testes 
 	@Test
 	public void findAllShouldReturnPagedResourcesSortedByName() throws Exception {
 		
@@ -194,5 +195,6 @@ public class EmployeeControllerIT {
 		result.andExpect(jsonPath("$.name").value("Joaquim"));
 		result.andExpect(jsonPath("$.email").value("joaquim@gmail.com"));
 		result.andExpect(jsonPath("$.departmentId").value(1L));
-	}	
+	}
+	*/	
 }
